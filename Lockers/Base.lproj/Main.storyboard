@@ -143,44 +143,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1z-zj-UBk">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZS-bm-xt0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="3EN-sh-VfD"/>
-                                            <constraint firstAttribute="height" constant="808" id="Zpz-0Y-nB9"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZS-bm-xt0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="EZS-bm-xt0" firstAttribute="leading" secondItem="R1z-zj-UBk" secondAttribute="leading" id="50I-mM-1NU"/>
-                                    <constraint firstAttribute="trailing" secondItem="EZS-bm-xt0" secondAttribute="trailing" id="NMN-7U-9l0"/>
-                                    <constraint firstAttribute="bottom" secondItem="EZS-bm-xt0" secondAttribute="bottom" id="QZC-nZ-J9D"/>
-                                    <constraint firstItem="EZS-bm-xt0" firstAttribute="top" secondItem="R1z-zj-UBk" secondAttribute="top" id="zEc-2B-4co"/>
+                                    <constraint firstAttribute="width" constant="414" id="3EN-sh-VfD"/>
+                                    <constraint firstAttribute="height" constant="808" id="Zpz-0Y-nB9"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="JCV-qZ-xAk" id="LTO-cT-wRe"/>
-                                </connections>
-                            </scrollView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Oxq-xT-j2N"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="R1z-zj-UBk" firstAttribute="centerY" secondItem="8Cf-ZY-CRa" secondAttribute="centerY" id="ERJ-Y7-XUK"/>
-                            <constraint firstAttribute="bottom" secondItem="R1z-zj-UBk" secondAttribute="bottom" id="Nme-WK-y9y"/>
-                            <constraint firstItem="R1z-zj-UBk" firstAttribute="centerX" secondItem="8Cf-ZY-CRa" secondAttribute="centerX" id="beb-vb-edK"/>
-                            <constraint firstItem="R1z-zj-UBk" firstAttribute="leading" secondItem="8Cf-ZY-CRa" secondAttribute="leading" id="m9u-Hu-o7V"/>
-                            <constraint firstItem="R1z-zj-UBk" firstAttribute="top" secondItem="8Cf-ZY-CRa" secondAttribute="top" id="r6B-bl-rph"/>
-                            <constraint firstAttribute="trailing" secondItem="R1z-zj-UBk" secondAttribute="trailing" id="tN4-Ap-dfp"/>
+                            <constraint firstItem="EZS-bm-xt0" firstAttribute="trailing" secondItem="Oxq-xT-j2N" secondAttribute="trailing" id="3ZN-C4-Ugt"/>
+                            <constraint firstItem="EZS-bm-xt0" firstAttribute="leading" secondItem="Oxq-xT-j2N" secondAttribute="leading" id="JYi-Rh-S10"/>
+                            <constraint firstItem="EZS-bm-xt0" firstAttribute="top" secondItem="Oxq-xT-j2N" secondAttribute="top" id="Qf8-Fm-qme"/>
+                            <constraint firstItem="EZS-bm-xt0" firstAttribute="bottom" secondItem="Oxq-xT-j2N" secondAttribute="bottom" id="jRZ-nZ-fzZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nem-Vf-oxg"/>
                     <connections>
                         <outlet property="imageViewPreview" destination="EZS-bm-xt0" id="DCD-au-Cia"/>
-                        <outlet property="scrollView" destination="R1z-zj-UBk" id="5Oj-Td-ebt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7z-R0-0hs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

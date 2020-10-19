@@ -34,7 +34,7 @@ class ChangePinViewController: UIViewController {
         if oldValue == textViewOld.text || oldValue == ""  {
             storeuserDefaults()
         } else {
-            self.showAlert(withTitle: "Please enter valid old password", message: "Old password not matched!!")
+            self.view.showToast(message: "Please enter valid old password.")
         }
     }
     

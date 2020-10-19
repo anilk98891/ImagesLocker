@@ -36,23 +36,22 @@ class PreviewViewController: UIViewController, UIScrollViewDelegate {
                 self.imageViewPreview.transform = .identity
                 
             case 2:
-                self.imageViewPreview.transform = CGAffineTransform(translationX: -256, y: -256)
+                self.imageViewPreview.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
                 
             case 3:
-                self.imageViewPreview.transform = .identity
+                self.imageViewPreview.transform = CGAffineTransform(scaleX: -2, y: -2)
                 
             case 4:
-                self.imageViewPreview.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                self.imageViewPreview.transform = CGAffineTransform(scaleX: -1, y: -1)
+                
             case 5:
                 self.imageViewPreview.transform = .identity
                 
             case 6:
-                self.imageViewPreview.alpha = 0.1
-                self.imageViewPreview.backgroundColor = UIColor.green
+                self.imageViewPreview.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
                 
             case 7:
-                self.imageViewPreview.alpha = 1
-                self.imageViewPreview.backgroundColor = UIColor.clear
+                self.imageViewPreview.transform = .identity
                 
             default:
                 break

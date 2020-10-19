@@ -11,16 +11,25 @@ import UIKit
 class InputScreenViewController: UIViewController {
     
     @IBOutlet weak var textFieldPasscode: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+
+    
     let defaults = UserDefaults.standard
     var counter = 6
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadGif()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         textFieldPasscode.becomeFirstResponder()
         textFieldPasscode.delegate = self
         self.title = "Hey!! Welcome"
         // Do any additional setup after loading the view.
+    }
+    
+    private func loadGif() {
+        let jeremyGif = UIImage.gifImageWithName("please-wait-icon-5")
+        imageView.image = jeremyGif
     }
     
     @objc func dismissKeyboard() {

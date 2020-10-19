@@ -11,11 +11,20 @@ import UIKit
 class ChangePinViewController: UIViewController {
     @IBOutlet weak var textViewOld: UITextField!
     @IBOutlet weak var textViewNew: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+
+    
     let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
         customRightBarButtonTitle(title: "Save")
+        loadGif()
+    }
+    
+    private func loadGif() {
+        let jeremyGif = UIImage.gifImageWithName("locker")
+        imageView.image = jeremyGif
     }
     
     private func getUserDefaultValue() -> String? {
